@@ -1,0 +1,33 @@
+{
+  "name": "bakery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linanero92/bakery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linanero92/bakery.git/issues"
+  },
+  "homepage": "git@github.com:linanero92/bakery.git#readme",
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-tinypng-compress": "^1.2.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}
