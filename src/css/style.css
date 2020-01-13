@@ -1,49 +1,42 @@
 @font-face {
-  font-family: "Nokia Sans S60";
-  src: url("../fonts/nokia/Nokia Sans S60 Regular.woff") format("woff"), url("../fonts/nokia/Nokia Sans S60 Regular.woff2") format("woff");
+  font-family: 'Nokia Sans S60';
+  src: url("../fonts/nokia/NokiaSansS60-Regular.woff") format("woff"), url("../fonts/nokia/NokiaSansS60-Regular.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto Condensed Regular';
-  src: url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff");
+  src: url("../fonts/robotorondensed/RobotoCondensed-Regular.woff") format("woff"), url("../fonts/RobotoCondensed/RobotoCondensed-Regular.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto Condensed Regular';
-  src: url("../fonts/RobotoCondensed/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; }
-
-@font-face {
-  font-family: 'Roboto Light';
-  src: url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto Condensed Bold';
+  src: url("../fonts/robotocondensed/RobotoCondensed-Bold.woff") format("woff"), url("../fonts/robotocondensed/RobotoCondensed-Bold.woff2") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto Light';
-  src: url("../fonts/Roboto/Roboto-Light.woff") format("woff"), url("../fonts/Roboto/Roboto-Light.woff2") format("woff");
-  font-weight: normal;
+  src: url("../fonts/roboto/Roboto-Light.woff") format("woff"), url("../fonts/roboto/Roboto-Light.woff2") format("woff");
+  font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto Regular';
-  src: url("../fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto/Roboto-Regular.woff2") format("woff");
+  src: url("../fonts/roboto/Roboto-Regular.woff") format("woff"), url("../fonts/roboto/Roboto-Regular.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
-  font-family: 'Roboto Regular';
-  src: url("../fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto/Roboto-Bold.woff2") format("woff");
-  font-weight: normal;
+  font-family: 'Roboto Bold';
+  src: url("../fonts/roboto/Roboto-Bold.woff") format("woff"), url("../fonts/roboto/Roboto-Bold.woff2") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -352,3 +345,139 @@ template {
  */
 [hidden] {
   display: none; }
+
+.container {
+  width: 80%;
+  max-width: 1925px;
+  margin: auto; }
+
+.row {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 14px; }
+
+body {
+  font-size: 1rem; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: #f9e7b7 url("../img/header-bg.png") no-repeat 100% 100%/cover;
+  padding-top: 0.6rem;
+  padding-bottom: 1.2rem;
+  padding-left: 9.64rem;
+  padding-right: 9.64rem; }
+
+.menu {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center; }
+
+.logo__title {
+  margin-top: 0.5rem;
+  margin-bottom: 0.1rem;
+  margin-left: 10rem;
+  color: #393939;
+  font-family: 'Nokia Sans S60', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 0.8;
+  letter-spacing: 5;
+  text-transform: uppercase; }
+
+.logo__subtitle {
+  margin-left: 10rem;
+  color: #f64747;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 0.9; }
+
+.logo__link {
+  position: absolute;
+  top: -1.2rem;
+  z-index: 199; }
+
+.phone {
+  color: #393939;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-decoration: none; }
+  .phone--small {
+    font-size: 1.3rem; }
+
+.call {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between; }
+  .call__link {
+    position: relative;
+    margin-left: -1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #f64747;
+    text-decoration: none;
+    border-bottom: 1px dashed #f64747; }
+    .call__link::before {
+      position: absolute;
+      width: 15px;
+      height: 1px;
+      content: url("../img/call-arrow.svg");
+      left: -42px;
+      top: 3px; }
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .header {
+    padding: 1rem 0; } }
+
+@media screen and (max-width: 992px) {
+  .call {
+    display: none; } }
+
+@media screen and (max-width: 820px) {
+  .logo__link {
+    display: none; }
+  .logo__title {
+    margin-left: 0; }
+  .logo__subtitle {
+    margin-left: 0; }
+  .phone--small {
+    font-size: 1.7rem; } }
+
+@media screen and (max-width: 570px) {
+  .logo__title {
+    font-size: 1.3rem; }
+  .phone {
+    font-size: 1.3rem; }
+    .phone--small {
+      font-size: 1.3rem; } }
+
+@media screen and (max-width: 420px) {
+  .logo__subtitle {
+    display: none; } }
