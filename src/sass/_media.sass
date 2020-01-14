@@ -6,6 +6,17 @@
 @media screen and ( max-width: 992px  )
   .call
     display: none
+  .hero
+    &__title
+      margin-bottom: 3rem
+    &__form
+      &-wrap
+        margin-top: 7rem
+  .advantages
+    flex-direction: column
+    align-items: center
+    &__item
+      width: 100%
 @media screen and ( max-width: 820px  )
   .logo
     &__link
@@ -17,6 +28,43 @@
   .phone
     &--small
       font-size: 1.7rem
+  .policy
+    position: relative
+    &::before
+      position: absolute
+      content: url('../img/hero/policy.png')
+      top: 1px
+      left: -1.2px
+    &::after
+      position: absolute
+      content: url('../img/hero/policy.png')
+      top: 1px
+      right: 0      
+@media screen and ( max-width: 760px )
+  .row
+    flex-direction: column
+  .col
+    &-70
+      width: 100%
+    &-30
+      width: 100%
+  .hero
+    background-image: none
+    &__button
+      margin-bottom: 1rem
+  .form
+    &-wrap
+      max-width: 100%
+      border: none
+  input
+    width: 100%
+  .hero
+    &__title
+      дline
+      margin-bottom: 2rem
+    &__form
+      &-wrap
+        margin-top: 4rem
 @media screen and ( max-width: 570px )
   .logo
     &__title

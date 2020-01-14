@@ -1,21 +1,24 @@
 .hero
   padding-top: 7.142rem
+  padding-bottom: 5rem
   height: 100vh
   background: $white url("../img/hero/hero-bg.jpg") no-repeat 
   background-position: 60% -1%
   background-size:  90% 63%
   &__title
+    margin-top: 5rem
     margin-bottom: 5rem
     font-family: 'Roboto Condensed', sans-serif
     color: $brown
     font-size: 3.2rem
-    line-height: 0.8
+    line-height: 1
     text-transform: uppercase
     text-align: center
     &--gray
       color: $gray
       font-size: 1.5rem
       font-weight: 700
+      line-height: 0.9
   &__content
     display: flex
     flex-direction: column
@@ -45,12 +48,12 @@
         font-size: 1.27rem
 .advantages
   display: flex
+  margin: 0
+  padding: 0
   justify-content: space-around
   align-items: flex-end
   min-height: 25rem
   list-style: none
-  margin: 0
-  padding: 0
   &__item
     display: flex
     justify-content: space-around
