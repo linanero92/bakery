@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Балашиха Хлеб</title>
 </head>
@@ -32,7 +34,7 @@
   </header>
     <main>
       <section id="hero" class="hero">
-        <div class="container">
+        <div class="container container--bg">
           <div class="hero__content">
             <h1 class="title hero__title">Уникальные коммерческие условия <span class="hero__title--gray"><br>по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода в МО</span></h1>
             <div class="row">
@@ -51,7 +53,7 @@
                     <input type="hidden" name="formName" value="hero-form">
                     <div class="input-group input-group--name hero__input-group">
                       <label for="user-name" class="label form__label">
-                        <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше Имя">
+                        <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше имя">
                       </label>
                     </div>
                     <div class="input-group input-group--email hero__input-group">
@@ -81,9 +83,65 @@
         <!-- /.container -->
       </section>
       <!-- /.hero -->
+      <section class="section gallery">
+        <div class="container">
+          <div class="section-title gallery__section-title">
+            <h2 class="section-title__heading">Фотографии нашего завода</h2>
+            <div class="section-title__image">
+              <img src="img/gallery/icon.svg" alt="spica">
+            </div>
+          </div>
+          <!-- /.section-title gallery__section-title -->
+          <div class="row">
+            <div class="col-60">
+              <!-- Swiper -->
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__image" src="img/gallery/gallery-photo.jpg" alt="photo">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__image" src="img/gallery/gallery-photo-2.jpg" alt="photo">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__image" src="img/gallery/gallery-photo.jpg" alt="photo">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__image" src="img/gallery/gallery-photo-3.jpg" alt="photo">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="swiper-slide__image" src="img/gallery/gallery-photo.jpg" alt="photo">
+                  </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination swiper-pagination-white"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next swiper-button-white"></div>
+                <div class="swiper-button-prev swiper-button-white"></div>
+              </div>
+            </div>
+            <!-- /.col-60 -->
+            <div class="col-40">
+              <p class="section__description gallery__description">
+                Мы изготавливаем хлеб на ОАО «Балашиха Хлеб». Это одно из крупнейших предприятий пищевой промышленности Московского региона, входящее в тройку ведущих производителей хлебобулочной продукции.
+              </p>
+              <p class="section__description gallery__description">
+                Мощности комбината изо дня в день модернизируются, позволяя сохранять неизменно высокий уровень качества. Наше оборудование – из России, Чехии, Германии, Голландии и Франции. Наша гордость – наша продукция, которая давно стала визитной карточкой края.
+              </p>
+              <!-- /.section__description gallery__description -->
+            </div>
+            <!-- /.col-40 -->
+          </div>
+          <!-- /row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section gallery -->
     </main>
-    <!-- <script src="js/jquery.validate.min.js"></script> -->
-    <!-- <script src="js/jquery.mask.min.js"></script> -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

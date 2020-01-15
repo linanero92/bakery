@@ -1,0 +1,67 @@
+.gallery
+  padding-top: 2rem
+  background: $light url('../img/gallery/gallery-bg.png') no-repeat
+  background-size: 50% 86%
+  background-position: 7%  200%
+  &__section
+    &-title
+      margin-bottom: 2rem
+  &__description
+    padding-right: 16rem
+    font-family: 'Roboto', sans-serif
+    font-size: 1.1rem
+    font-weight: 300
+    line-height: 1.6
+.swiper
+  &-container
+    max-width: 40.42rem
+    min-height: 23rem
+    border: 5px solid $white
+  &-slide
+    display: flex
+    flex-wrap: wrap
+    &r
+      &-image
+        display: block
+        width: 100%
+.swiper
+  &-pagination
+    max-width: 110px
+    background-color: rgba($black, 0.3)
+    &-bullet
+      border-radius: 0
+      background-color: $white
+      opacity: 1
+      &-active
+        border-radius: 0
+        background-color: $red
+  &-container-horizontal>.swiper-pagination-bullets
+    bottom: 10px
+    left: calc(50% - 55px)
+    width: 100%
+  &-pagination
+    &-custom
+      bottom: 10px
+      left: calc(50% - 55px)
+      width: 100%
+    &-fraction
+      bottom: 10px
+      left: calc(50% - 55px)
+      width: 100%
+  &-button
+    &-prev, &-next
+      top: auto
+      bottom: 0
+      background-size: 10px
+      width: 10px
+      height: 14px
+      &::after
+        display: none
+    &-prev
+      left: 227px
+      bottom: 10px
+      background: url('../img/gallery/arrow-prev.svg') no-repeat center
+    &-next
+      right: 227px
+      bottom: 10px
+      background: url('../img/gallery/arrow-next.svg') no-repeat center

@@ -1,8 +1,61 @@
+@media screen and ( max-width: 1640px )
+  .swiper-container
+    margin-top: 1rem
+@media screen and ( max-width: 1540px )
+  .container
+    &--bg
+      background: $white url("../img/hero/hero-bg.png") no-repeat 
+      background-position: 743% -58%
+      background-size:  98% 98%
+  .gallery
+    background: $light url('../img/gallery/gallery-bg.png') no-repeat
+    background-size: 59% 92%
+    background-position: -2%  200%
+    &__description
+      padding-right: 4rem
+@media screen and ( max-width: 1440px )
+  .gallery
+    background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
+    background-size: 70% 90%
+    background-position: -1%  100%
+    &__description
+      padding-right: 5rem
+@media screen and ( max-width: 1370px )
+  .gallery
+    background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
+    background-size: 70% 90%
+    background-position: -1%  90%
+    &__description
+      padding-right: 5rem
+@media screen and ( max-width: 1270px )
+  .gallery
+    background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
+    background-size: 70% 90%
+    background-position: -1%  -1%
+    &__description
+      padding-right: 5rem
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
   .header
     padding: 1rem 0
+  .container
+    &--bg
+      background: $white url("../img/hero/hero-bg.png") no-repeat 
+      background-position: 743% -58%
+      background-size:  98% 98%
+  .swiper
+    &-button
+      &-prev
+        left: 185px
+      &-next
+        right: 185px
+@media screen and ( max-width: 1030px )
+  .gallery
+    background-image: none
+    &__description
+      padding-right: 4rem
+      padding-left: 1rem
 @media screen and ( max-width: 992px  )
   .call
     display: none
@@ -17,6 +70,25 @@
     align-items: center
     &__item
       width: 100%
+  .container
+    &--bg
+      background: $white url("../img/hero/hero-bg.png") no-repeat 
+      background-position: 365% 60%
+      background-size:  97% 50%
+  .gallery
+    &__description
+      padding-right: 2rem
+      padding-left: 1rem
+@media screen and ( max-width: 900px  )
+  .swiper
+    &-container
+      max-width: 32rem
+      min-height: 19rem
+    &-button
+      &-prev
+        left: 135px
+      &-next
+        right: 135px
 @media screen and ( max-width: 820px  )
   .logo
     &__link
@@ -43,6 +115,7 @@
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
+    align-items: center
   .col
     &-70
       width: 100%
@@ -60,11 +133,26 @@
     width: 100%
   .hero
     &__title
-      дline
       margin-bottom: 2rem
     &__form
       &-wrap
         margin-top: 4rem
+  .container
+    &--bg
+      background-image: none
+  .swiper
+    &-container
+      max-width: 40.42rem
+      min-height: 23rem
+    &-button
+      &-prev
+        left: 185px
+      &-next
+        right: 185px
+  .gallery
+    &__description
+      padding-right: 0
+      padding-left: 0
 @media screen and ( max-width: 570px )
   .logo
     &__title
@@ -73,7 +161,25 @@
     font-size: 1.3rem
     &--small
       font-size: 1.3rem
+  .swiper
+    &-container
+      max-width: 27rem
+      min-height: 15rem
+    &-button
+      &-prev
+        left: 105px
+      &-next
+        right: 105px
 @media screen and ( max-width: 420px )
   .logo
     &__subtitle
       display: none
+  .swiper
+    &-container
+      max-width: 25rem
+      min-height: 15rem
+    &-button
+      &-prev
+        left: 93px
+      &-next
+        right: 93px
