@@ -748,9 +748,12 @@ img {
   background: url("../img/gallery/arrow-next.svg") no-repeat center; }
 
 .general {
+  padding-bottom: 0;
   background: #ffffff url("../img/general/general-bg.png") no-repeat;
   background-size: 50% 50%;
   background-position: 105% 60%; }
+  .general__section-title {
+    margin-bottom: 2rem; }
   .general__video {
     position: relative;
     display: -webkit-box;
@@ -766,8 +769,10 @@ img {
       position: absolute;
       bottom: 7px;
       left: 20px; }
-  .general__image-wrap {
-    margin-top: -10rem; }
+  .general__image {
+    margin-bottom: -5px; }
+    .general__image-wrap {
+      margin-top: -10rem; }
 
 .video__play {
   position: absolute;
@@ -779,6 +784,44 @@ img {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   cursor: pointer; }
+
+.quality {
+  background-color: #fff9e6; }
+  .quality__item {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 2rem; }
+    .quality__item--left {
+      padding-left: 10rem; }
+    .quality__item--right {
+      padding-right: 12rem; }
+  .quality__title {
+    margin-bottom: -15px;
+    padding: 0;
+    font-family: 'Roboto', sasn-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1b1b1b;
+    line-height: 1.5; }
+  .quality__text {
+    font-family: 'Roboto', sasn-serif;
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: #1b1b1b;
+    line-height: 1.5; }
+  .quality__image {
+    display: block;
+    max-width: 100%;
+    width: 19rem; }
+    .quality__image-wrap {
+      margin-right: 2rem; }
 
 @media screen and (max-width: 1650px) {
   .general__image-wrap {
@@ -856,7 +899,11 @@ img {
     margin-top: -1rem; }
   .general__video {
     background: #272727 url("../img/general/video-mask.png") center no-repeat;
-    background-size: 102% 101%; } }
+    background-size: 102% 101%; }
+  .quality__item--left {
+    padding-left: 7rem; }
+  .quality__item--right {
+    padding-right: 9rem; } }
 
 @media screen and (max-width: 1030px) {
   .gallery {
@@ -892,7 +939,11 @@ img {
   .general__video {
     height: 24rem;
     background: #272727 url("../img/general/video-mask.png") center no-repeat;
-    background-size: 102% 101%; } }
+    background-size: 102% 101%; }
+  .quality__item--left {
+    padding-left: 5rem; }
+  .quality__item--right {
+    padding-right: 7rem; } }
 
 @media screen and (max-width: 900px) {
   .swiper-container {
@@ -923,7 +974,11 @@ img {
       position: absolute;
       content: url("../img/hero/policy.png");
       top: 1px;
-      right: 0; } }
+      right: 0; }
+  .quality__item--left {
+    padding-left: 3rem; }
+  .quality__item--right {
+    padding-right: 5rem; } }
 
 @media screen and (max-width: 760px) {
   .row {
@@ -968,7 +1023,13 @@ img {
       background: #272727 url("../img/general/video-mask.png") center no-repeat;
       background-size: 102% 101%; }
     .general__image-wrap {
-      display: none; } }
+      display: none; }
+  .quality__item {
+    padding-left: 0; }
+    .quality__item--left {
+      padding-left: 0; }
+    .quality__item--right {
+      padding-right: 0; } }
 
 @media screen and (max-width: 570px) {
   .logo__title {
@@ -983,7 +1044,16 @@ img {
   .swiper-button-prev {
     left: 105px; }
   .swiper-button-next {
-    right: 105px; } }
+    right: 105px; }
+  .general {
+    background-image: none; }
+    .general__video {
+      width: 30rem;
+      background: #272727 url("../img/general/video-mask.png") center no-repeat;
+      background-size: 102% 101%; }
+      .general__video::after {
+        bottom: 7px;
+        left: 12px; } }
 
 @media screen and (max-width: 420px) {
   .logo__subtitle {
@@ -994,4 +1064,14 @@ img {
   .swiper-button-prev {
     left: 93px; }
   .swiper-button-next {
-    right: 93px; } }
+    right: 93px; }
+  .general {
+    background-image: none; }
+    .general__video {
+      width: 25rem;
+      height: 18rem;
+      background: #272727 url("../img/general/video-mask.png") center no-repeat;
+      background-size: 102% 101%; }
+      .general__video::after {
+        bottom: 2px;
+        left: 8px; } }

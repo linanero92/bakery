@@ -121,7 +121,7 @@ $(document).ready(function () {
     }
   });
 
-   footerForm.validate({
+   offerForm.validate({
     errorClass: "invalid",
      errorElement: "div",
     rules: {
@@ -151,7 +151,7 @@ $(document).ready(function () {
     }
   });
   
-  $('[type=tel]').mask('+7(000) 000-00-00', { placeholder: "+7(___) ___-__-__" });
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
   // slider
    //Initialize Swiper
@@ -172,7 +172,7 @@ $(document).ready(function () {
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '349',
+    height: '100%',
     width: '100%',
     videoId: '0srI4c7SbAc',
     events: {
@@ -181,7 +181,9 @@ $(document).ready(function () {
     });
   })
   function videoPlay(event) {
-    event.target.videoPlay();
+    event.target.setVolume(50);
+    event.target.playVideo();
+
   }
 
 });

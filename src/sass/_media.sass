@@ -85,6 +85,12 @@
     &__video
       background: $dark url('../img/general/video-mask.png') center no-repeat 
       background-size: 102% 101%
+  .quality
+    &__item
+      &--left
+        padding-left: 7rem
+      &--right
+        padding-right: 9rem
 @media screen and ( max-width: 1030px )
   .gallery
     background-image: none
@@ -123,6 +129,12 @@
       height: 24rem
       background: $dark url('../img/general/video-mask.png') center no-repeat 
       background-size: 102% 101%
+  .quality
+    &__item
+      &--left
+        padding-left: 5rem
+      &--right
+        padding-right: 7rem
 @media screen and ( max-width: 900px  )
   .swiper
     &-container
@@ -155,7 +167,13 @@
       position: absolute
       content: url('../img/hero/policy.png')
       top: 1px
-      right: 0      
+      right: 0 
+  .quality
+    &__item
+      &--left
+        padding-left: 3rem
+      &--right
+        padding-right: 5rem   
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
@@ -206,6 +224,13 @@
     &__image
       &-wrap
         display: none
+  .quality
+    &__item
+      padding-left: 0
+      &--left
+        padding-left: 0
+      &--right
+        padding-right: 0  
 @media screen and ( max-width: 570px )
   .logo
     &__title
@@ -223,6 +248,15 @@
         left: 105px
       &-next
         right: 105px
+  .general
+    background-image: none
+    &__video
+      width: 30rem
+      background: $dark url('../img/general/video-mask.png') center no-repeat 
+      background-size: 102% 101%
+      &::after
+        bottom: 7px
+        left: 12px
 @media screen and ( max-width: 420px )
   .logo
     &__subtitle
@@ -236,3 +270,13 @@
         left: 93px
       &-next
         right: 93px
+  .general
+    background-image: none
+    &__video
+      width: 25rem
+      height: 18rem
+      background: $dark url('../img/general/video-mask.png') center no-repeat 
+      background-size: 102% 101%
+      &::after
+        bottom: 2px
+        left: 8px
