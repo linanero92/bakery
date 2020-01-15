@@ -1,0 +1,31 @@
+.general
+  background: $white url('../img/general/general-bg.png') no-repeat
+  background-size: 50% 50%
+  background-position: 105% 60%
+  &__video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 44rem
+    height: 28rem
+    background: $dark url('../img/general/video-mask.png') center no-repeat
+    border-radius: 4px
+    border: 1px solid $white
+    &::after
+      content: url('../img/general/play-icon-2.svg')
+      position: absolute
+      bottom: 7px
+      left: 20px
+  &__image
+    &-wrap
+      margin-top: -10rem
+.video
+  &__play
+    position: absolute
+    left: 50%
+    top: 50%
+    width: 4rem
+    margin: auto
+    margin-right: -50%
+    transform: translate(-50%, -50%)
+    cursor: pointer

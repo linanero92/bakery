@@ -1,3 +1,8 @@
+@media screen and ( max-width: 1650px )
+  .general
+    &__image
+      &-wrap
+        margin-top: -8rem
 @media screen and ( max-width: 1640px )
   .swiper-container
     margin-top: 1rem
@@ -13,6 +18,10 @@
     background-position: -2%  200%
     &__description
       padding-right: 4rem
+  .general
+    &__image
+      &-wrap
+        margin-top: -5rem
 @media screen and ( max-width: 1440px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -20,6 +29,10 @@
     background-position: -1%  100%
     &__description
       padding-right: 5rem
+  .general
+    &__image
+      &-wrap
+        margin-top: -4rem
 @media screen and ( max-width: 1370px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -27,6 +40,15 @@
     background-position: -1%  90%
     &__description
       padding-right: 5rem
+  .general
+    &__image
+      &-wrap
+        margin-top: -2rem
+@media screen and ( max-width: 1300px )
+  .general
+    &__image
+      &-wrap
+        margin-top: -1rem
 @media screen and ( max-width: 1270px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -34,6 +56,10 @@
     background-position: -1%  -1%
     &__description
       padding-right: 5rem
+  .general
+    &__image
+      &-wrap
+        margin-top: -0.5rem
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -44,27 +70,37 @@
       background: $white url("../img/hero/hero-bg.png") no-repeat 
       background-position: 743% -58%
       background-size:  98% 98%
+  .row
+    align-items: center
   .swiper
     &-button
       &-prev
         left: 185px
       &-next
         right: 185px
+  .general
+    &__image
+      &-wrap
+        margin-top: -1rem
+    &__video
+      background: $dark url('../img/general/video-mask.png') center no-repeat 
+      background-size: 102% 101%
 @media screen and ( max-width: 1030px )
   .gallery
     background-image: none
     &__description
       padding-right: 4rem
       padding-left: 1rem
+  .general
+    &__image
+      &-wrap
+        margin-top: 1rem
 @media screen and ( max-width: 992px  )
   .call
     display: none
   .hero
     &__title
       margin-bottom: 3rem
-    &__form
-      &-wrap
-        margin-top: 7rem
   .advantages
     flex-direction: column
     align-items: center
@@ -79,6 +115,14 @@
     &__description
       padding-right: 2rem
       padding-left: 1rem
+  .general
+    &__image
+      &-wrap
+        margin-top: 0
+    &__video
+      height: 24rem
+      background: $dark url('../img/general/video-mask.png') center no-repeat 
+      background-size: 102% 101%
 @media screen and ( max-width: 900px  )
   .swiper
     &-container
@@ -153,6 +197,15 @@
     &__description
       padding-right: 0
       padding-left: 0
+  .general
+    background-image: none
+    &__video
+      width: 44rem
+      background: $dark url('../img/general/video-mask.png') center no-repeat 
+      background-size: 102% 101%
+    &__image
+      &-wrap
+        display: none
 @media screen and ( max-width: 570px )
   .logo
     &__title
