@@ -5,24 +5,27 @@
   background-position: 105% 60%
   &__section
     &-title
+      position: relative
+      z-index: 79
       margin-bottom: 2rem
   &__video
     position: relative
     display: flex
     margin: auto
-    max-width: 44rem
+    margin-bottom: 2rem
+    max-width: 43.5rem
     height: 28rem
-    background: $dark url('../img/general/video-mask.png') center no-repeat
-    border-radius: 4px
+    background: $dark url('../img/general/video-mask.png') no-repeat
+    background-size: cover
+    background-position: 100%
+    border-radius: 5px
     border: 1px solid $white
-    &::after
-      content: url('../img/general/play-icon-2.svg')
-      position: absolute
-      bottom: 7px
-      left: 20px
+    box-shadow: 0 9px 18px 0 rgba(0, 0, 0, 0.25)
   &__image
-    margin-bottom: -5px
+    margin-bottom: -7px
     &-wrap
+      position: relative
+      z-index: 1
       margin-top: -10rem
 .video
   &__play

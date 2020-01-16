@@ -23,7 +23,7 @@
           <a href="tel:+74957771100" class="phone contacts__phone"><span class="phone--small">8(495)</span>777-11-00</a>
           <div class="call contacts__call">
             <img class="call__icon" src="img/phone.svg" alt="Телефон">
-            <a href="#" class="call__link">Перезвоните мне!</a>
+            <a href="#" class="call__link" data-toggle="modal">Перезвоните мне!</a>
           </div>
         </div>
         <!-- /.contacts -->
@@ -53,21 +53,21 @@
                     <input type="hidden" name="formName" value="hero-form">
                     <div class="input-group input-group--name hero__input-group">
                       <label for="user-name" class="label form__label">
-                        <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше имя">
+                        <input type="text" name="userName" class="input form__input input  hero__input" id="user-name" placeholder="Ваше имя" maxlength="15">
                       </label>
                     </div>
                     <div class="input-group input-group--email hero__input-group">
                       <label for="user-email" class="label form__label">
-                        <input type="email" name="userEmail" class="input form__input input--email hero__input" id="user-email" placeholder="Ваш email">
+                        <input type="email" name="userEmail" class="input form__input input--email hero__input" id="user-email" placeholder="Ваш email" maxlength="25">
                       </label>
                     </div>
-                    <!-- /.input-group modal__input-group -->
+                    <!-- /.input-group hero__input-group -->
                     <div class="input-group input-group--phone hero__input-group">
                       <label for="user-phone" class="label form__label">
                         <input type="tel" name="userPhone" class="input form__input input--phone hero__input" id="user-phone" placeholder="Ваш номер телефона">
                       </label>
                     </div>
-                    <!-- /.input-group footer__input-group -->
+                    <!-- /.input-group hero__input-group -->
                     <button class="button button--primary hero__button">Получить КП!</button>
                     <div class="policy hero__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</div>
                   </form>
@@ -250,7 +250,125 @@
         <!-- /.container -->
       </div>
       <!-- /.section quality -->
+      <div class="section catalog">
+        <div class="container">
+          <div class="section-title catalog__section-title">
+            <h2 class="section-title__heading">Каталог продукции</h2>
+            <div class="section-title__image">
+              <img src="img/gallery/icon.svg" alt="spica">
+            </div>
+          </div>
+          <!-- /.section-title quality__section-title -->
+          <div class="card-wrap">
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-1.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Хлеб</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-2.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Хлебушки</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-3.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Булочки</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-4.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Кондитерские</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-5.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Хлебцы</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+            <div class="card catalog__card">
+              <div class="card__image-wrap">
+                <img src="img/catalog/image-6.png" alt="product" class="card__image">
+              </div>
+              <div class="card__description">
+                <div class="card__title">Мюсли</div>
+                <div class="card__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так.</div>
+                <a href="#" class="card__button">Просмотреть</a>
+              </div>
+              <!-- /.card__description -->
+            </div>
+            <!-- /.card catalog__card -->
+          </div>
+          <!-- /.card-wrap -->
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.section catalog -->
     </main>
+    <div class="modal modal-content-show">
+      <div class="modal__dialog">
+        <button class="modal__close"></button>
+        <h2 class="modal__title">Заказать обратный звонок</h2>
+        <form action="#" id="modal-form" class="form modal__form">
+          <input type="hidden" name="formName" value="modal-form">
+          <div class="input-group input-group--name modal__input-group">
+            <label for="user-name" class="label form__label">
+              <input type="text" name="userName" class="input form__input input  modal__input" id="user-name" placeholder="Ваше имя" maxlength="15">
+            </label>
+          </div>
+          <!-- /.input-group modal__input-group -->
+          <div class="input-group input-group--phone modal__input-group">
+            <label for="user-phone" class="label form__label">
+              <input type="tel" name="userPhone" class="input form__input input--phone modal__input" id="user-phone" placeholder="Ваш номер телефона">
+            </label>
+          </div>
+          <!-- /.input-group modal__input-group -->
+          <button class="button button--primary modal__button">Отправить!</button>
+          <div class="policy modal__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</div>
+        </form>
+        <!-- /.form modal__form -->
+      </div>
+    </div>
+    <div class="modal-up">
+      <div class="modal-up__dialog">
+        <button class="modal-up__close"></button>
+        <div class="modal-up__title">Форма успешно отправлена!</div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>

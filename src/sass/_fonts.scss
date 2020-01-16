@@ -19,6 +19,26 @@ font-display: swap;
 }
 
 @font-face {
+font-family: 'Open Sans';
+src: 
+url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
+url('../fonts/opensans/OpenSans-Regular.woff2') format('woff');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'Open Sans';
+src: 
+url('../fonts/opensans/OpenSans-Bold.woff') format('woff'),
+url('../fonts/opensans/OpenSans-Bold.woff2') format('woff');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
 font-family: 'Roboto Condensed Regular';
 src: 
 url('../fonts/robotorondensed/RobotoCondensed-Regular.woff') format('woff'),
