@@ -3,9 +3,6 @@
     &-wrap
       padding-left: 8rem
       padding-right: 8rem
-  .quality
-    &__image
-      width: 24rem
 @media screen and ( max-width: 1650px )
   .general
     &__image
@@ -14,17 +11,6 @@
 @media screen and ( max-width: 1640px )
   .swiper-container
     margin-top: 1rem
-  .quality
-    &__image
-      width: 25rem
-@media screen and ( max-width: 1691px )
-  .card
-    &-wrap
-      padding-left: 5rem
-      padding-right: 5rem
-  .quality
-    &__image
-      width: 26rem
 @media screen and ( max-width: 1540px )
   .container
     &--bg
@@ -41,17 +27,11 @@
     &__image
       &-wrap
         margin-top: -5rem
-  .quality
-    &__image
-      width: 27rem
 @media screen and ( max-width: 1450px )
   .card
     &-wrap
       padding-left: 3rem
       padding-right: 3rem
-  .quality
-    &__image
-      width: 28rem
 @media screen and ( max-width: 1440px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -63,17 +43,11 @@
     &__image
       &-wrap
         margin-top: -4rem
-  .quality
-    &__image
-      width: 29rem
 @media screen and ( max-width: 1376px )
   .card
     &-wrap
       padding-left: 0
       padding-right: 0
-  .quality
-    &__image
-      width: 30rem
 @media screen and ( max-width: 1370px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -85,24 +59,15 @@
     &__image
       &-wrap
         margin-top: -2rem
-  .quality
-    &__image
-      width: 31rem
 @media screen and ( max-width: 1300px )
   .general
     &__image
       &-wrap
         margin-top: -1rem
-  .quality
-    &__image
-      width: 31rem
 @media screen and ( max-width: 1271px )
   .catalog
     &__card
       max-width: 22rem
-  .quality
-    &__image
-      width: 31rem
 @media screen and ( max-width: 1270px )
   .gallery
     background: $light url('../img/gallery/gallery-bg-small.png') no-repeat
@@ -114,9 +79,9 @@
     &__image
       &-wrap
         margin-top: -0.5rem
-  .quality
-    &__image
-      width: 31rem
+    &__video
+      background-size: 100% 100%
+      background-position: 98%
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
@@ -132,8 +97,10 @@
   .swiper
     &-button
       &-prev
+        bottom: 10px
         left: 185px
       &-next
+        bottom: 10px
         right: 185px
   .general
     &__image
@@ -142,12 +109,6 @@
     &__video
       background: $dark url('../img/general/video-mask.png') center no-repeat 
       background-size: 102% 101%
-  .quality
-    &__item
-      &--left
-        padding-left: 7rem
-      &--right
-        padding-right: 9rem
 @media screen and ( max-width: 1030px )
   .gallery
     background-image: none
@@ -178,6 +139,14 @@
     &__description
       padding-right: 2rem
       padding-left: 1rem
+  .swiper
+    &-button
+      &-prev
+        bottom: 10px
+        left: 180px
+      &-next
+        bottom: 10px
+        right: 180px
   .general
     &__image
       &-wrap
@@ -186,17 +155,29 @@
       height: 24rem
       background: $dark url('../img/general/video-mask.png') center no-repeat 
       background-size: 102% 101%
-  .quality
-    &__item
-      &--left
-        padding-left: 5rem
-      &--right
-        padding-right: 7rem
-@media screen and ( max-width: 900px  )
+@media screen and ( max-width: 980px )
+  .swiper
+    &-button
+      &-prev
+        bottom: 10px
+        left: 175px
+      &-next
+        bottom: 10px
+        right: 175px
+@media screen and ( max-width: 950px )
+  .swiper
+    &-button
+      &-prev
+        bottom: 10px
+        left: 167px
+      &-next
+        bottom: 10px
+        right: 167px
+@media screen and ( max-width: 900px )
   .swiper
     &-container
       max-width: 32rem
-      min-height: 19rem
+      height: 19rem
     &-button
       &-prev
         left: 135px
@@ -223,24 +204,32 @@
     &::after
       position: absolute
       content: url('../img/hero/policy.png')
-      top: 1px
+      top: 2px
       right: 0 
-  .quality
-    &__item
-      &--left
-        padding-left: 3rem
-      &--right
-        padding-right: 5rem   
+@media screen and ( max-width: 780px )
+  .swiper
+    &-button
+      &-prev
+        bottom: 10px
+        left: 128px
+      &-next
+        bottom: 10px
+        right: 128px
 @media screen and ( max-width: 760px )
   .row
     flex-direction: column
     align-items: center
   .col
-    &-70
-      width: 100%
+    &-70,
+    &-60,
+    &-50,
+    &-40,
     &-30
       width: 100%
+  .section
+    padding: 30px 0
   .hero
+    padding-top: 30px
     background-image: none
     &__button
       margin-bottom: 1rem
@@ -256,18 +245,30 @@
     &__form
       &-wrap
         margin-top: 4rem
+  .policy
+    position: relative
+    &::before
+      position: absolute
+      content: url('../img/hero/policy.png')
+      top: 1px
+      left: -3px
+    &::after
+      position: absolute
+      content: url('../img/hero/policy.png')
+      top: 2px
+      right: -3px 
   .container
     &--bg
       background-image: none
   .swiper
     &-container
-      max-width: 40.42rem
-      min-height: 23rem
+      width: 40.42rem
+      height: 23rem
     &-button
       &-prev
-        left: 185px
+        left: 135px
       &-next
-        right: 185px
+        right: 135px
   .gallery
     &__description
       padding-right: 0
@@ -283,17 +284,11 @@
         display: none
   .quality
     &__item
-      padding-left: 0
-      &--left
-        padding-left: 0
-      &--right
-        padding-right: 0
+      &:nth-of-type(2)
+        margin-left: 0
   .catalog
     &__card
       max-width: 100%
-  .quality
-    &__image
-      width: 19rem
 @media screen and ( max-width: 570px )
   .logo
     &__title
@@ -305,7 +300,7 @@
   .swiper
     &-container
       max-width: 27rem
-      min-height: 15rem
+      height: 15rem
     &-button
       &-prev
         left: 105px
@@ -343,3 +338,31 @@
       &::after
         bottom: 2px
         left: 8px
+@media screen and ( max-width: 360px )
+  .swiper
+    &-container
+      max-width: 22rem
+      min-height: 15rem
+    &-button
+      &-prev
+        left: 75px
+      &-next
+        right: 75px
+  .general
+    background-image: none
+    &__video
+      width: 22rem
+      height: 17rem
+/* IE10+ specific styles go here */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) 
+  .advantages
+    height: 25rem
+    &__item
+      padding-top: 5rem
+  .quality
+    &__image
+      width: 8rem
+  .catalog
+    &__card
+      width: 24.21rem
+  

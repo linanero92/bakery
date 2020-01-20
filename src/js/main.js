@@ -186,4 +186,16 @@ $(document).ready(function () {
 
   }
 
+objectFitImages('img.some-image', {watchMQ: true});
+// or objectFitImages(null, {watchMQ: true}); // for the auto mode
+// an array/NodeList
+var someImages = document.querySelectorAll('img.some-image');
+objectFitImages(someImages);
+// a single element
+var oneImage = document.querySelector('img.some-image');
+objectFitImages(oneImage);
+// or with jQuery
+var $someImages = $('img.some-image');
+objectFitImages($someImages);
+
 });
