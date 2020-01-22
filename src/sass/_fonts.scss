@@ -1,18 +1,8 @@
 @font-face {
-font-family: 'Nokia Sans S60';
+font-family: 'MagistralCond-Medium';
 src: 
-url('../fonts/nokia/NokiaSansS60-Regular.woff') format('woff'),
-url('../fonts/nokia/NokiaSansS60-Regular.woff2') format('woff');
-font-weight: normal;
-font-style: normal;
-font-display: swap;
-}
-
-@font-face {
-font-family: 'Geometric';
-src: 
-url('../fonts/geometric/GeometricSansSerifv1.woff') format('woff'),
-url('../fonts/geometric/GeometricSansSerifv1.woff2') format('woff');
+url('../fonts/magistral/MagistralCondMedium.woff') format('woff'),
+url('../fonts/magistral/MagistralCondMedium.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 font-display: swap;
@@ -22,7 +12,7 @@ font-display: swap;
 font-family: 'Open Sans';
 src: 
 url('../fonts/opensans/OpenSans-Regular.woff') format('woff'),
-url('../fonts/opensans/OpenSans-Regular.woff2') format('woff');
+url('../fonts/opensans/OpenSans-Regular.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 font-display: swap;
@@ -32,7 +22,7 @@ font-display: swap;
 font-family: 'Open Sans';
 src: 
 url('../fonts/opensans/OpenSans-Bold.woff') format('woff'),
-url('../fonts/opensans/OpenSans-Bold.woff2') format('woff');
+url('../fonts/opensans/OpenSans-Bold.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 font-display: swap;
@@ -42,7 +32,7 @@ font-display: swap;
 font-family: 'Roboto Condensed';
 src: 
 url('../fonts/robotocondensed/RobotoCondensed-Regular.woff') format('woff'),
-url('../fonts/robotocondensed/RobotoCondensed-Regular.woff2') format('woff');
+url('../fonts/robotocondensed/RobotoCondensed-Regular.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 font-display: swap;
@@ -52,7 +42,7 @@ font-display: swap;
 font-family: 'Roboto Condensed';
 src: 
 url('../fonts/robotocondensed/RobotoCondensed-Bold.woff') format('woff'),
-url('../fonts/robotocondensed/RobotoCondensed-Bold.woff2') format('woff');
+url('../fonts/robotocondensed/RobotoCondensed-Bold.woff2') format('woff2');
 font-weight: bold;
 font-style: normal;
 font-display: swap;
@@ -62,7 +52,7 @@ font-display: swap;
 font-family: 'Roboto';
 src: 
 url('../fonts/roboto/Roboto-Light.woff') format('woff'),
-url('../fonts/roboto/Roboto-Light.woff2') format('woff');
+url('../fonts/roboto/Roboto-Light.woff2') format('woff2');
 font-weight: 300;
 font-style: normal;
 font-display: swap;
@@ -72,7 +62,7 @@ font-display: swap;
 font-family: 'Roboto';
 src: 
 url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
-url('../fonts/roboto/Roboto-Regular.woff2') format('woff');
+url('../fonts/roboto/Roboto-Regular.woff2') format('woff2');
 font-weight: normal;
 font-style: normal;
 font-display: swap;
@@ -82,7 +72,7 @@ font-display: swap;
 font-family: 'Roboto';
 src: 
 url('../fonts/roboto/Roboto-Bold.woff') format('woff'),
-url('../fonts/roboto/Roboto-Bold.woff2') format('woff');
+url('../fonts/roboto/Roboto-Bold.woff2') format('woff2');
 font-weight: bold;
 font-style: normal;
 font-display: swap;

@@ -354,29 +354,43 @@
             </div>
             <!-- /.about__description -->
             <div class="about__video">
-              <div class="swiper-container">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__video" src="img/gallery/gallery-photo.jpg" alt="photo">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__video" src="img/gallery/gallery-photo-2.jpg" alt="photo">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__video" src="img/gallery/gallery-photo.jpg" alt="photo">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__video" src="img/gallery/gallery-photo-3.jpg" alt="photo">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="swiper-slide__video" src="img/gallery/gallery-photo.jpg" alt="photo">
+              <div class="swiper-object-about">
+              <!-- Slider main container -->
+                <div class="swiper-container swiper-container-about" id="swiper-container-about">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="youtube" id="T4wrp58O1m8" style="width: 100%; height: 250px;"></div>
+                        <img src="img/general/play-icon.svg" alt="play-icon" class="video__play video__play--small">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="youtube" id="6uvl6bJVFds" style="width: 100%; height: 250px;"></div>
+                        <img src="img/general/play-icon.svg" alt="play-icon" class="video__play video__play--small">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="youtube" id="Vm87YnF7C9o" style="width: 100%; height: 250px;"></div>
+                        <img src="img/general/play-icon.svg" alt="play-icon" class="video__play video__play--small">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="youtube" id="cJNXUjGh9Vg" style="width: 100%; height: 250px;"></div>
+                        <img src="img/general/play-icon.svg" alt="play-icon" class="video__play video__play--small">
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="youtube" id="1eM2b4Gl7bg" style="width: 100%; height: 250px;"></div>
+                        <img src="img/general/play-icon.svg" alt="play-icon" class="video__play video__play--small">
+                      </div>
                   </div>
                 </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination swiper-pagination-white swiper-pagination--video"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next swiper-button-white"></div>
-                <div class="swiper-button-prev swiper-button-white"></div>
+                <!-- /.swiper-container -->
+                <div class="swiper-navigation-wrapper-about">
+                <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev swiper-button-prev-about">
+                  </div>
+                  <div class="swiper-pagination swiper-pagination-about"></div>
+                  <div class="swiper-button-next swiper-button-next-about">
+                  </div>
+                </div>  
               </div>
             </div>
             <!-- /.about__video -->
@@ -384,7 +398,48 @@
         </div>
         <!-- /.container -->
       </div>
-      <!-- /.section about -->
+    <!-- /.section about -->
+    <div class="section offer">
+      <div class="container">
+        <div class="section-title offer__section-title">
+          <h2 class="section-title__heading section-title__heading--white">Получите персональное предложение</h2>
+          <div class="section-title__image">
+            <img src="img/offer/spica.png" alt="spica">
+          </div>
+        </div>
+        <!-- /.section-title quality__section-title -->
+        <form action="#" class="form offer__form">
+          <input type="hidden" name="formName" value="offer-form">
+          <div class="input-group input-group--name offer__input-group">
+            <label for="client-name" class="label form__label">
+              <input type="text" name="userName" class="input form__input input  offer__input" id="client-name" placeholder="Ваше имя" maxlength="15">
+            </label>
+          </div>
+          <div class="input-group input-group--email offer__input-group">
+            <label for="client-email" class="label form__label">
+              <input type="email" name="userEmail" class="input form__input input--email offer__input" id="client-email" placeholder="Ваш email" maxlength="25">
+            </label>
+          </div>
+          <!-- /.input-group offer__input-group -->
+          <div class="input-group input-group--phone offer__input-group">
+            <label for="client-phone" class="label form__label">
+              <input type="tel" name="userPhone" class="input form__input input--phone offer__input" id="client-phone" placeholder="Ваш номер телефона">
+            </label>
+          </div>
+          <!-- /.input-group offer__input-group -->
+          <div class="offer_button-group">
+            <button class="button button--primary offer__button">Получить сейчас!</button>
+            <div class="policy offer__policy">Ваши данные не будут переданны третьим лицам, согласно законам РФ</div>
+          </div>
+          <!-- /.offer-wrpa -->
+         
+        </form>
+        <!-- /.form offer__form -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.section offer -->
+
     </main>
     <div class="modal modal-content-show">
       <div class="modal__dialog">

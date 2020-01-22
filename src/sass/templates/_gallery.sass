@@ -31,10 +31,13 @@
     z-index: 5
     max-width: 110px
     background-color: rgba($black, 0.3)
+    height: 16px
+    border-radius: 3px
     &-bullet
       border-radius: 0
       background-color: $white
       opacity: 1
+      margin-top: 4px
       &-active
         border-radius: 0
         background-color: $red
@@ -65,10 +68,13 @@
       &::after
         display: none
     &-prev
-      left: 227px
+      left: 230px
       bottom: 8px
-      background: url('../img/gallery/arrow-prev.svg') no-repeat center
+      background: url('../img/about/arrow-prev.svg') no-repeat center
     &-next
-      right: 227px
+      right: 230px
       bottom: 8px
-      background: url('../img/gallery/arrow-next.svg') no-repeat center
+      background: url('../img/about/arrow-next.svg') no-repeat center
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet
+  margin: 0 2px
+  margin-top: 5px
