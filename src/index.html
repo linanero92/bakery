@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/favicon.png" type="image/x-icon">
   <title>Балашиха Хлеб</title>
 </head>
 <body>
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(57181468, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/57181468" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <header class="header">
     <div class="container">
       <div class="menu">
@@ -23,7 +25,7 @@
           <a href="tel:+74957771100" class="phone contacts__phone"><span class="phone--small">8(495)</span>777-11-00</a>
           <div class="call contacts__call">
             <img class="call__icon" src="img/phone.svg" alt="Телефон">
-            <a href="#" class="call__link" data-toggle="modal">Перезвоните мне!</a>
+            <a href="#" onclick="ym('57181468', 'reachGoal', 'link'); return true;" class="call__link" data-toggle="modal">Перезвоните мне!</a>
           </div>
         </div>
         <!-- /.contacts -->
@@ -39,7 +41,7 @@
             <h1 class="title hero__title">Уникальные коммерческие условия <span class="hero__title--gray"><br>по поставкам хлебобулочных и кандитерских изделей от крупнейшего хлебзавода в МО</span></h1>
             <div class="row">
               <div class="col-70">
-                <ul class="advantages hero__advantages">
+                <ul class="advantages hero__advantages wow fadeInLeft slow" data-wow-delay="0.3s">
                   <li class="advantages__item">60 тонн хлебобулочных изделий в день</li>
                   <li class="advantages__item">Старейший хлебзавод в Москве</li>
                   <li class="advantages__item">Уникальная система тройного контроля</li>
@@ -47,7 +49,7 @@
               </div>
               <!-- col-70 -->
               <div class="col-30">
-                <div class="hero__form-wrap form-wrap">
+                <div class="hero__form-wrap form-wrap wow fadeInRight slow" data-wow-delay="0.3s">
                   <h2 class="form-wrap__title">Получите персональное <span class="form-wrap__title--small">коммерческое предложение</span></h2>
                   <form action="#" class="form hero__form">
                     <input type="hidden" name="formName" value="hero-form">
@@ -137,7 +139,7 @@
         <!-- /.container -->
       </section>
       <!-- /.section gallery -->
-      <div class="section general">
+      <div class="section generalwow fadeInRight slow" data-wow-delay="1.5s">
         <div class="container">
           <div class="section-title general__section-title">
             <h2 class="section-title__heading">Главные преимущества за 1 минуту</h2>
@@ -168,7 +170,7 @@
         <!-- /container -->
       </div>
       <!-- /.section general -->
-      <div class="section quality">
+      <div class="section quality wow fadeInLeft slow" data-wow-delay="0.6s">
         <div class="container">
           <div class="section-title quality__section-title">
             <h2 class="section-title__heading">Наши преимущества</h2>
@@ -249,7 +251,7 @@
         <!-- /.container -->
       </div>
       <!-- /.section quality -->
-      <div class="section catalog">
+      <div class="section catalog wow fadeInRight slow" data-wow-delay="1s">
         <div class="container">
           <div class="section-title catalog__section-title">
             <h2 class="section-title__heading">Каталог продукции</h2>
@@ -337,7 +339,7 @@
         <!-- /.container -->
       </div>
       <!-- /.section catalog -->
-      <div class="section about">
+      <div class="section about wow fadeInLeft slow" data-wow-delay="1.4s">
         <div class="container">
           <div class="section-title about__section-title">
             <h2 class="section-title__heading">О "Башашиха Хлеб"</h2>
@@ -399,7 +401,7 @@
         <!-- /.container -->
       </div>
       <!-- /.section about -->
-      <div class="section offer">
+      <div class="section offer wow fadeInRight slow" data-wow-delay="1.5s">
         <div class="container">
           <div class="section-title offer__section-title">
             <h2 class="section-title__heading section-title__heading--white">Получите персональное предложение</h2>
@@ -438,9 +440,21 @@
         </div>
         <!-- /.container -->
       </div>
-    <!-- /.section offer -->
+      <!-- /.section offer -->
+      <div class="map ymap-container">
+        <div class="map__icon">
+          <div class="map__container">
+            <div class="map__title">Мы находимся</div>
+            <div class="map__text">г. Москва, ул. Неверовского, д. 9 Телефон: +7 (495) 444-44-44</div>
+            <div class="map__email">E-mail: <a class="map__email" href="email"><span class="map__email--red">info@ied.ru</span></a></div>
+          </div>
+        </div>
+        <div class="loader loader-default"></div>
+        <div class="map-yandex" id="map"></div>
+      </div>
+      <!-- /.map -->
       <div class="photo">
-        <div class="row photo__row">
+        <div class="row photo__row wow fadeInLeft slow" data-wow-delay="0.3s">
           <div class="photo__content photo__content--one">
             <img class="photo__img" src="img/photo/photo-01.jpg" alt="photo-1">
           </div>
@@ -460,7 +474,7 @@
             <img class="photo__img" src="img/photo/photo-06.jpg" alt="photo-6">
           </div>
         </div>
-        <div class="row photo__row">
+        <div class="row photo__row wow fadeInRight slow" data-wow-delay="0.3s">
           <div class="photo__content photo__content--seven">
             <img class="photo__img" src="img/photo/photo-07.jpg" alt="photo-7">
           </div>
@@ -528,6 +542,7 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/ofi.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,77 @@
+.ymap
+  &-container 
+    position: relative
+    overflow: hidden
+    width: 100%
+    height: 40.21rem
+    cursor: pointer
+    background: $light url('../img/load-marker.png')  no-repeat
+    background-position: center center
+    background-size: cover
+    box-shadow: 0 0 2em  0 rgba($dark, 0.2)
+/* Блок, в котором появится Яндекс.Карта */
+.map
+  &-yandex 
+    position: relative
+    z-index: 7
+    width: 100%
+    height: 100%
+    cursor: pointer
+    background-color: transparent
+.loader.is-active 
+  top: 0
+  opacity: 1
+.loader-default:after 
+  position: absolute
+  top: calc(50% - 24px)
+  left: calc(50% - 24px)
+  width: 48px
+  height: 48px
+  content: ''
+  animation: rotation 1s linear infinite
+  border: solid 8px $light
+  border-left-color: transparent
+  border-radius: 50%
+@keyframes rotation 
+  from 
+    transform: rotate(0)
+  to 
+    transform: rotate(359deg)
+@keyframes blink 
+  from
+    opacity: 0.5
+  to 
+    opacity: 1
+.map
+  &__icon
+    position: absolute
+    top: 33%
+    left: 39.5%
+    width: 30rem
+    height: 28.5rem
+    z-index: 299
+    background: url('../img/map-icon.png') no-repeat
+  &__container
+    margin: 30px 17px 6px 159px
+  &__title
+    color: $map
+    font-family: 'Roboto', sans-serif
+    font-size: 1.1rem
+    font-weight: 900
+    line-height: 1.8
+    text-transform: uppercase
+  &__text
+    color: $map
+    font-family: 'Roboto', sans-serif
+    font-size: 1.1rem
+    font-weight: 300
+    line-height: 1.8
+  &__email
+    color: $map
+    font-family: 'Roboto', sans-serif
+    font-size: 1.1rem
+    font-weight: 300
+    line-height: 1.8
+    text-decoration: none     
+    &--red
+      color: $red

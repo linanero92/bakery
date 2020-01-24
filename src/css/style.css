@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'MagistralCond-Medium';
   src: url("../fonts/magistral/MagistralCondMedium.woff") format("woff"), url("../fonts/magistral/MagistralCondMedium.woff2") format("woff2");
@@ -535,7 +536,7 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 99;
+  z-index: 999;
   background: #f9e7b7 url("../img/header-bg.png") no-repeat 100% 100%/cover;
   padding-top: 0.6rem;
   padding-bottom: 1.2rem;
@@ -961,7 +962,9 @@ img {
     justify-content: center;
     align-self: center;
     width: 100%;
-    background: url("../img/about/about-bg.png") no-repeat center #fff9e6; }
+    background: #fff9e6 url("../img/about/about-bg.png") no-repeat;
+    background-size: contain;
+    background-position: 50% 100%; }
 
 .item-video {
   height: 250px; }
@@ -1069,6 +1072,108 @@ img {
 .section-title__heading--white {
   color: #ffffff; }
 
+.ymap-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 40.21rem;
+  cursor: pointer;
+  background: #fff9e6 url("../img/load-marker.png") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: 0 0 2em 0 rgba(39, 39, 39, 0.2); }
+
+/* Блок, в котором появится Яндекс.Карта */
+.map-yandex {
+  position: relative;
+  z-index: 7;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: transparent; }
+
+.loader.is-active {
+  top: 0;
+  opacity: 1; }
+
+.loader-default:after {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: calc(50% - 24px);
+  width: 48px;
+  height: 48px;
+  content: '';
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: solid 8px #fff9e6;
+  border-left-color: transparent;
+  border-radius: 50%; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@-webkit-keyframes blink {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+@keyframes blink {
+  from {
+    opacity: 0.5; }
+  to {
+    opacity: 1; } }
+
+.map__icon {
+  position: absolute;
+  top: 33%;
+  left: 39.5%;
+  width: 30rem;
+  height: 28.5rem;
+  z-index: 299;
+  background: url("../img/map-icon.png") no-repeat; }
+
+.map__container {
+  margin: 30px 17px 6px 159px; }
+
+.map__title {
+  color: #2f2f2f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1.8;
+  text-transform: uppercase; }
+
+.map__text {
+  color: #2f2f2f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8; }
+
+.map__email {
+  color: #2f2f2f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8;
+  text-decoration: none; }
+  .map__email--red {
+    color: #f64747; }
+
 .photo__content {
   position: relative;
   display: -webkit-box;
@@ -1080,8 +1185,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--two:hover::after {
@@ -1091,8 +1194,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--three:hover::after {
@@ -1102,8 +1203,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--four:hover::after {
@@ -1113,8 +1212,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--five:hover::after {
@@ -1124,8 +1221,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--six:hover::after {
@@ -1135,8 +1230,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--seven:hover::after {
@@ -1146,8 +1239,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--eight:hover::after {
@@ -1157,8 +1248,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--nine:hover::after {
@@ -1168,8 +1257,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--ten:hover::after {
@@ -1179,8 +1266,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--eleven:hover::after {
@@ -1190,8 +1275,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
   .photo__content--twelve:hover::after {
@@ -1201,8 +1284,6 @@ img {
     left: 0;
     bottom: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
     -webkit-transition-duration: 5s;
     transition-duration: 5s; }
 
@@ -1639,7 +1720,11 @@ img {
   .offer__input-group {
     margin-bottom: 0.5rem; }
   .photo {
-    display: none; } }
+    display: none; }
+  .map__icon {
+    display: none; }
+  .ymap-container {
+    height: 28.21rem; } }
 
 @media screen and (max-width: 570px) {
   .logo__title {
@@ -1663,11 +1748,15 @@ img {
       background-size: 102% 101%; }
       .general__video::after {
         bottom: 7px;
-        left: 12px; } }
+        left: 12px; }
+  .ymap-container {
+    height: 24.21rem; } }
 
 @media screen and (max-width: 460px) {
   .footer__text {
-    max-width: 26.5rem; } }
+    max-width: 26.5rem; }
+  .ymap-container {
+    height: 20.21rem; } }
 
 @media screen and (max-width: 420px) {
   .logo__subtitle {
